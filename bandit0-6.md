@@ -1,7 +1,7 @@
-#Đây là write-up cho những bạn mới biết về linux
+# Newbie Linux
 #Linux làm việc chủ yếu trên Terminal nên những bạn mới khó tiếp cận. Nên cần làm quen nhiều và thực hành.
 #Link làm bài : https://overthewire.org/wargames/bandit/
-##Bandit0
+## Bandit0
 - Đề bài : 
 ![image](https://hackmd.io/_uploads/rJWMo0gyee.png)
 - Bài này đơn giản chỉ cần dùng lệnh ssh kết nối cổng 2220 của bandit.labs.overthewire.org:
@@ -14,13 +14,13 @@
     ssh bandit1@bandit.labs.overthewire.org -p 2220
 ```
 - Mật khẩu: ```bandit0``` (Đề cho) :+1: 
-##Bandit0->1
+## Bandit0->1
 - Đề bài : 
 ![image](https://hackmd.io/_uploads/H1LSnCgJxe.png)
 ![image](https://hackmd.io/_uploads/SkM6nReJxg.png)
 - Ta dùng ```ls``` để hiển thị các file có trong folder hiện có và ``` cat ``` để đọc nội dung file (như mở word).
 - Z là có mật khẩu: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
-##Bandit1->2
+## Bandit1->2
 - Đề bài:
 ![image](https://hackmd.io/_uploads/BkBRp0lJgx.png)
 - Tương tự ta mở folder xem chứa gì ```ls```.
@@ -29,13 +29,13 @@
 - Nên cần thêm ```.\``` trước tên file để hiểu rằng là ta đang đọc file ```-``` , ```cat .\-```
 ![image](https://hackmd.io/_uploads/SJQPy1Z1ge.png)
 - Mật khẩu: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
-##Bandit2->3 (Dần hiểu rùi nên nội dung vắn tắt lại !!!)
+## Bandit2->3 (Dần hiểu rùi nên nội dung vắn tắt lại !!!)
 - Đề bài:
 ![image](https://hackmd.io/_uploads/Hy0MlJWJeg.png)
 - Dùng ```cat``` để đọc và do chứa khoảng cách nên dùng trong cặp dấu ```""``` 
 - Nếu không sẽ hiểu đọc 4 file liên tiếp - sai.```cat "spaces in this filename"```
 - Mật khẩu: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
-##Bandit3->4
+## Bandit3->4
 - Đề bài : 
 ![image](https://hackmd.io/_uploads/Skei71Zyll.png)
 - Dùng lệnh ```cd inhere``` để mở folder nhưng có vấn đề! Nó rỗng
@@ -43,7 +43,7 @@
 ![image](https://hackmd.io/_uploads/HJbNN1Wkgl.png)
 - Dọc file và ta có mật khẩu: ```cat ./...Hiding-From-You```
 - Mật khẩu: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
-##Bandit4->5
+## Bandit4->5
 - Đề bài: 
 ![image](https://hackmd.io/_uploads/H14oBy-yxx.png)
 - Đề cho đoạn người đọc được -> dọc hết bằng lệnh ```cat ./*``` 
@@ -51,6 +51,17 @@
 - Mật khẩu: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 - À có thể kiểm tra file nào thuộc dạng đọc được bằng lệnh '''find . -type f | xargs file```
 ![image](https://hackmd.io/_uploads/ryKMu1Z1el.png)
+## Bandit5->6
+- Đề bài:
+![image](https://hackmd.io/_uploads/SyWR_VMJgl.png)
+- Để ý nội dung của đề:
+- File đọc được nhưng khi kiểm tra như trên sẽ rất khó (nhiều file đọc dc !!)
+- Tìm file có kích thước 1033 byte và đọc nó: ```find . -type f -size 1033c```
+![image](https://hackmd.io/_uploads/BJHJqEMygx.png)
+- Đọc thôi !!```cat ./maybehere07/.file2``` Khi đang trong inhere
+![image](https://hackmd.io/_uploads/HJfw5VGkgg.png)
+- Mật khẩu: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
 
 
 
